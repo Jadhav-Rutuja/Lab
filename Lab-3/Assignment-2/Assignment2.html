@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Items and Prices</title>
+    <style>
+        body {
+            margin: 0px auto;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(177, 175, 175);
+            max-width: 800px;
+            line-height: 1.6;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            margin-top: 1%;
+            font-family: Arial;
+        }
+
+        h1{
+            text-align: center;
+            background-color: black;
+            color: whitesmoke;
+            margin-top: 3%;
+        }
+
+        form{
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgb(196, 194, 194);
+            margin: 2%;
+            padding: 2%;
+        }
+
+        h2{
+            text-align: center;
+            padding: 1%;
+        }
+
+        label{
+            font-size: 1.2em;
+            font-weight: bolder;
+            color: rgb(62, 9, 152);
+        }
+
+        input{
+            padding: 1%;
+            width: 40%;
+            margin-bottom: 2%;
+            margin-top: 1%;
+        }
+
+        button{
+            background-color: rgb(38, 92, 230);
+            color: azure;
+            width: 250px;
+            padding: 1%; 
+            border-radius: 4px;
+            box-shadow: 0 0 10px rgb(220, 217, 217);
+            border:none;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        Sample Online Items and Prices
+    </h1>
+    <form>
+        <label for="laptop">
+            Laptop ($800 each):
+        </label><br>
+        <input type="number" id="laptop" name="laptop" placeholder="0"><br>
+        <label for="smartphone">
+            Smartphone ($400 each):
+        </label><br>
+        <input type="number" id="smartphone" name="smartphone" placeholder="0"><br>
+        <label for="headphones">
+            Headphones ($400 each):
+        </label><br>
+        <input type="number" id="headphones" name="headphones" placeholder="0"><br>
+        <label for="tablet">
+            Tablet ($300 each):
+        </label><br>
+        <input type="number" id="tablet" name="tablet" placeholder="0"><br>
+        <button type="submit">Calculate Total Price</button>
+    </form>
+    <h2>Total Price: $0</h2>
+</body>
+</html>
