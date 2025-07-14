@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Number Checker</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body class="bg-light">
+    <div class="container">
+        <div class="card">
+            <h2>Check Number Type</h2>
+            <button onclick="openprompt()">Check</button>
+        </div>
+    </div>
+    <script>
+        function openprompt() {
+            const input = prompt("Enter a number to check whether its positive");
+            checkNumber(input);
+        }
+        function checkNumber(input) {
+            const number = parseInt(input);
+            if (isNaN(number)) {
+                alert("Please enter a valid number.");
+                return;
+            }
+            if (number > 0) {
+                alert("The number is positive.");
+            } else if (number < 0) {
+                alert("The number is negative.");
+            } else {
+                alert("The number is zero.");
+            }
+        } 
+    </script>
+</body>
+
+</html>
